@@ -10,7 +10,7 @@ import io.netty.handler.codec.MessageToByteEncoder;
 /**
  * @author huangping 2016年8月21日 上午1:03:20
  */
-public class RpcEncoder extends MessageToByteEncoder {
+public class RpcEncoder extends MessageToByteEncoder<Object> {
 
 	private Class<?> genericClass;
 

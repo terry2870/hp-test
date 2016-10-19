@@ -16,8 +16,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import com.hp.test.rpc.bean.User;
 import com.hp.test.rpc.netty.RpcProxy;
 import com.hp.test.rpc.service.HelloService;
+import com.hp.tools.common.utils.DateUtil;
 
 /**
  * @author huangping 2016年8月21日 上午1:27:29
@@ -38,7 +40,7 @@ public class HelloServiceClient {
 		helloService = rpcProxy.create(HelloService.class);
 		
 		ExecutorService exe = Executors.newFixedThreadPool(5);
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < 1; i++) {
 			exe.execute(new Run(i));
 		}
 		try {
@@ -72,7 +74,12 @@ public class HelloServiceClient {
 		public void run() {
 			
 			log.info("send= " + i);
-			String result = helloService.hello("World_" + i);
+			String str = "";
+			while (str.length() < 20000) {
+				str += DateUtil.getCurrentTimeSeconds();
+			}
+			User user = new User(i, str + "_" + i);
+			String result = helloService.hello(user);
 			
 			log.info("result= " + result);
 		}

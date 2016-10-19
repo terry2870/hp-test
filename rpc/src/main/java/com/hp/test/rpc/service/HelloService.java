@@ -3,6 +3,8 @@
  */
 package com.hp.test.rpc.service;
 
+import com.hp.test.rpc.bean.User;
+
 /**
  * @author huangping
  * 2016年8月21日 上午12:11:04
@@ -10,5 +12,5 @@ package com.hp.test.rpc.service;
 public interface HelloService {
 
 	
-	String hello(String name);
+	String hello(User user);
 }

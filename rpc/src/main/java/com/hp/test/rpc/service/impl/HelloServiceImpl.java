@@ -4,6 +4,7 @@
 package com.hp.test.rpc.service.impl;
 
 import com.hp.test.rpc.annotation.RpcService;
+import com.hp.test.rpc.bean.User;
 import com.hp.test.rpc.service.HelloService;
 
 /**
@@ -15,8 +16,8 @@ public class HelloServiceImpl implements HelloService {
 
 
 	@Override
-	public String hello(String name) {
-		return "Hello! " + name;
+	public String hello(User user) {
+		return "Hello! " + user.toString();
 	}
 
 }
