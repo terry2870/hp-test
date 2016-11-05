@@ -75,11 +75,11 @@ public class HelloServiceClient {
 			
 			log.info("send= " + i);
 			String str = "";
-			while (str.length() < 20000) {
+			while (str.length() < 20) {
 				str += DateUtil.getCurrentTimeSeconds();
 			}
 			User user = new User(i, str + "_" + i);
-			String result = helloService.hello(user);
+			String result = helloService.hello(user.toString());
 			
 			log.info("result= " + result);
 		}

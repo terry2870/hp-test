@@ -20,4 +20,9 @@ public class HelloServiceImpl implements HelloService {
 		return "Hello! " + user.toString();
 	}
 
+	@Override
+	public String hello(String str) {
+		return "Hello------! " + str;
+	}
+
 }

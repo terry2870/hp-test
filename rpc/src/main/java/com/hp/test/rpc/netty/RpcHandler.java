@@ -12,6 +12,7 @@ import org.springframework.cglib.reflect.FastMethod;
 
 import com.hp.test.rpc.bean.RpcRequest;
 import com.hp.test.rpc.bean.RpcResponse;
+import com.hp.tools.common.utils.ObjectUtil;
 
 import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
@@ -59,9 +60,10 @@ public class RpcHandler extends SimpleChannelInboundHandler<RpcRequest> {
 		 * parameters);
 		 */
 
-		FastClass serviceFastClass = FastClass.create(serviceClass);
-		FastMethod serviceFastMethod = serviceFastClass.getMethod(methodName, parameterTypes);
-		return serviceFastMethod.invoke(serviceBean, parameters);
+		/*FastClass serviceFastClass = FastClass.create(serviceClass);
+		FastMethod serviceFastMethod = serviceFastClass.getMethod(methodName, parameterTypes);*/
+		return ObjectUtil.executeJavaMethod(serviceBean, methodName, parameterTypes, parameters);
+		//return serviceFastMethod.invoke(serviceBean, parameters);
 	}
 
 	@Override
