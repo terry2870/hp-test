@@ -12,7 +12,7 @@ import com.rpc.test.bean.User;
 public interface HelloService {
 
 	
-	String hello(User user);
+//	String hello(User user);
 	
 	String hello(String str);
 }

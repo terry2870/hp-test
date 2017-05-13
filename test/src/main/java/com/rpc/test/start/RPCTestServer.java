@@ -29,11 +29,11 @@ public class RPCTestServer {
 		System.out.println("start");
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("classpath*:META-INF/spring/spring-rpc-server.xml");
 		
-		try {
+		/*try {
 			System.in.read();
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
+		}*/
 		System.out.println("end");
 		
 	}

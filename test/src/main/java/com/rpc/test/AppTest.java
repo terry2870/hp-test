@@ -8,6 +8,7 @@ import java.util.Map;
 
 import org.apache.commons.io.FileUtils;
 
+import com.hp.tools.common.utils.MD5Util;
 import com.hp.tools.common.utils.MapUtil;
 import com.hp.tools.common.utils.MapUtil.Function;
 
@@ -17,7 +18,7 @@ import com.hp.tools.common.utils.MapUtil.Function;
 public class AppTest {
 
 	public static void main(String[] args) {
-		try {
+		/*try {
 			List<String> skns = FileUtils.readLines(new File("E:/log/skns.txt"), "UTF-8");
 			List<String> list = new ArrayList<>();
 			List<String> urls = FileUtils.readLines(new File("E:/log/product_url.csv"), "UTF-8");
@@ -36,6 +37,8 @@ public class AppTest {
 			
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
+		}*/
+		
+		System.out.println(MD5Util.getMD5("123456"));
 	}
 }
