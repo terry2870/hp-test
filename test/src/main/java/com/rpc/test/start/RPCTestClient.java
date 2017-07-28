@@ -36,7 +36,7 @@ public class RPCTestClient {
 		System.out.println("start");
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("classpath*:META-INF/spring/spring-rpc-client.xml");
 		HelloService h = ctx.getBean(HelloService.class);
-		for (int i = 0; i < 1; i++) {
+		for (int i = 0; i < 5; i++) {
 			exe.execute(new Run(i, h));
 		}
 		
