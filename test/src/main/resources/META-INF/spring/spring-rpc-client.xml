@@ -16,9 +16,10 @@
 
 	<!-- 装在properties文件 -->
 	<context:property-placeholder location="classpath*:config.properties" />
-		
+	
+	<import resource="classpath*:META-INF/spring/spring-tools.xml"/>
 	<import resource="classpath*:META-INF/spring/spring-hp-core-*.xml"/>
-	<import resource="classpath*:META-INF/spring/spring-hp-rpc-common.xml"/>
+
 	<import resource="classpath*:META-INF/spring/spring-hp-rpc-client.xml"/>
 </beans>
 

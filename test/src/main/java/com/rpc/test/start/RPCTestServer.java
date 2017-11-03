@@ -6,10 +6,8 @@ package com.rpc.test.start;
 import java.io.IOException;
 
 import org.junit.Test;
-import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import com.rpc.test.service.HelloService;
 
 /**
  * @author ping.huang
@@ -27,7 +25,7 @@ public class RPCTestServer {
 	
 	public static void main(String[] args) {
 		System.out.println("start");
-		ApplicationContext ctx = new ClassPathXmlApplicationContext("classpath*:META-INF/spring/spring-rpc-server.xml");
+		AbstractApplicationContext ctx = new ClassPathXmlApplicationContext("classpath*:META-INF/spring/spring-rpc-server.xml");
 		
 		/*try {
 			System.in.read();
@@ -35,7 +33,6 @@ public class RPCTestServer {
 			e.printStackTrace();
 		}*/
 		System.out.println("end");
-		
 	}
 	
 	@Test

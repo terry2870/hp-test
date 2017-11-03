@@ -10,7 +10,7 @@ import java.util.concurrent.Executors;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.rpc.test.service.HelloService;
@@ -34,7 +34,7 @@ public class RPCTestClient {
 	
 	public static void main(String[] args) {
 		System.out.println("start");
-		ApplicationContext ctx = new ClassPathXmlApplicationContext("classpath*:META-INF/spring/spring-rpc-client.xml");
+		AbstractApplicationContext ctx = new ClassPathXmlApplicationContext("classpath*:META-INF/spring/spring-rpc-client.xml");
 		HelloService h = ctx.getBean(HelloService.class);
 		for (int i = 0; i < 5; i++) {
 			exe.execute(new Run(i, h));
@@ -47,7 +47,7 @@ public class RPCTestClient {
 			e.printStackTrace();
 		}*/
 		System.out.println("end");
-		
+		//ctx.close();
 	}
 	
 	public static class Run implements Runnable {
