@@ -8,8 +8,8 @@
 		<artifactId>hp-test</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>test</artifactId>
-	<name>test</name>
+	<artifactId>hp-test-test</artifactId>
+	<name>hp-test-test</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
