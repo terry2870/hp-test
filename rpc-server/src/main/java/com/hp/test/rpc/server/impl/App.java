@@ -1,4 +1,4 @@
-package org.rpc.client;
+package com.hp.test.rpc.server.impl;
 
 /**
  * Hello world!

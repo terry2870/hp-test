@@ -15,6 +15,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.version>0.0.1-SNAPSHOT</project.version>
 		<spring.version>4.3.1.RELEASE</spring.version>
 		<junit.version>4.12</junit.version>
 		<fastjson.version>1.2.14</fastjson.version>
@@ -23,6 +24,22 @@
 
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>com.hp.test</groupId>
+				<artifactId>hp-test-rpc-client</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.hp.test</groupId>
+				<artifactId>hp-test-rpc-model</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.hp.test</groupId>
+				<artifactId>hp-test-rpc-server</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+		
 			<dependency>
 				<groupId>com.hp.test</groupId>
 				<artifactId>hp-test-rpc</artifactId>
