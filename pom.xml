@@ -71,8 +71,8 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.hp.tools</groupId>
-			<artifactId>hp-tools-common</artifactId>
+			<groupId>com.hp.core</groupId>
+			<artifactId>hp-core-common</artifactId>
 		</dependency>
 	</dependencies>
 
