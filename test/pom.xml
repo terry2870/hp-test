@@ -31,6 +31,10 @@
 			<groupId>com.hp.rpc</groupId>
 			<artifactId>hp-rpc-server</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.hp.core</groupId>
+			<artifactId>hp-core-queue</artifactId>
+		</dependency>
 	</dependencies>
 
 	<profiles>

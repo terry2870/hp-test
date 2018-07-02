@@ -12,8 +12,8 @@ import java.util.Map.Entry;
 
 import org.apache.commons.io.IOUtils;
 
-import com.hp.tools.common.utils.MapUtil;
-import com.hp.tools.common.utils.MapUtil.FunctionExPlus;
+import com.hp.core.common.utils.MapUtil;
+import com.hp.core.common.utils.MapUtil.FunctionExPlus;
 
 /**
  * @author ping.huang

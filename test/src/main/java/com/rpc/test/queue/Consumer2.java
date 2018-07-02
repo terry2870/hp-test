@@ -6,7 +6,7 @@ package com.rpc.test.queue;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.hp.tools.common.queue.AbstractHPQueueConsumer;
+import com.hp.core.queue.consumer.AbstractHPQueueConsumer;
 
 /**
  * @author ping.huang

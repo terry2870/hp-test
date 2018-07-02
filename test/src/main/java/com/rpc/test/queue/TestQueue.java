@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.hp.tools.common.queue.HPQueueProducer;
+import com.hp.core.queue.producer.HPQueueProducer;
 
 /**
  * @author ping.huang

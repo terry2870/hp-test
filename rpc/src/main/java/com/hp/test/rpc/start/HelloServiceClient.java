@@ -16,10 +16,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import com.hp.core.common.utils.DateUtil;
 import com.hp.test.rpc.bean.User;
 import com.hp.test.rpc.netty.RpcProxy;
 import com.hp.test.rpc.service.HelloService;
-import com.hp.tools.common.utils.DateUtil;
 
 /**
  * @author huangping 2016年8月21日 上午1:27:29

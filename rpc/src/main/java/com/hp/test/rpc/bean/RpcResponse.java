@@ -3,7 +3,7 @@
  */
 package com.hp.test.rpc.bean;
 
-import com.hp.tools.common.beans.BaseBean;
+import com.hp.core.common.beans.BaseBean;
 
 /**
  * @author huangping 2016年8月21日 上午12:59:49
