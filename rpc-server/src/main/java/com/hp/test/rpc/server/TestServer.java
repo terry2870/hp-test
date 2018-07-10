@@ -17,6 +17,7 @@ public class TestServer {
 		System.out.println("start");
 		try (AbstractApplicationContext ctx = new ClassPathXmlApplicationContext("classpath*:META-INF/spring/spring-rpc-server.xml")) {
 			System.in.read();
+			
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
